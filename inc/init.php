@@ -1,6 +1,7 @@
 <?php  
-    /* session_start();
-    ini_set('display_errors','On'); */
+    /* ini_set('display_errors','On'); */
+
+    session_start();
 
     include 'inc/db/connect.php'; 
 
