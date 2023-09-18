@@ -1,6 +1,10 @@
 <?php
 
-include 'inc/init.php';
+// include 'inc/init.php';
+
+session_start();
+include 'inc/db/connect.php';
+include 'inc/app/head.php';
 
 if (isset($_SESSION['id'])) {
     header("location:admin_panel/");
