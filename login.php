@@ -8,7 +8,7 @@ include 'inc/app/head.php';
 
 if (isset($_SESSION['id'])) {
     header("location:admin_panel/");
-} 
+}
 
 ?>
 

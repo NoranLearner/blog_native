@@ -1,10 +1,12 @@
 <?php
-include 'init.php';
+
+session_start();
+
 if (!isset($_SESSION['id'])) {
 	header("location:../login.php");
 }
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -278,7 +280,7 @@ if (!isset($_SESSION['id'])) {
 							<a href="profile.html" class="dropdown-item has-icon">
 								<i class="ion ion-gear-a"></i> Settings
 							</a>
-							<a href="#" class="dropdown-item has-icon">
+							<a href="logout.php" class="dropdown-item has-icon">
 								<i class="ion-ios-redo"></i> Logout
 							</a>
 						</div>

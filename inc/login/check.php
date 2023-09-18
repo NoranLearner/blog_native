@@ -6,13 +6,14 @@ include '../db/connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    $email = $_POST['email'];
+    // $email = $_POST['email'];
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $pass = $_POST['pass'];
-    $hashedPass = MD5($pass);
+    $hashedPass = sha1($pass);
 
     // $stmt = $connect->prepare("SELECT * FROM `users` WHERE email = '$email' AND password = '$pass' ");
     $stmt = $connect->prepare("SELECT * FROM `users` WHERE email = ? AND password = ? ");
-    $stmt->execute([$email, $pass]);
+    $stmt->execute([$email, $hashedPass]);
     $info = $stmt->fetch();
     $count = $stmt->rowCount();
 
