@@ -1,6 +1,6 @@
 <?php 
 
-$dsn  	= 'mysql:host=localhost;dbname=blog';
+$dsn  	= 'mysql:host=localhost;dbname=blog_native';
 $user 	= 'root';
 $pass 	= '';
 $option = array(

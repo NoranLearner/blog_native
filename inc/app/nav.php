@@ -56,7 +56,6 @@
                     <li><a href="#" class="pin"> </a></li>
                     <li><a href="#" class="in"> </a></li>
                     <li><a href="#" class="be"> </a></li>
-
                     <li><a href="#" class="vimeo"> </a></li>
                 </ul>
             </div>
