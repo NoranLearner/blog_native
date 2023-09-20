@@ -35,7 +35,7 @@ if (isset($_SESSION['id'])) {
                         <div id="success"></div>
                         <form id="login">
                             <div class="form-group text-right">
-                                <label>البريد الإلكترونى</label>
+                                <label">البريد الإلكترونى</label>
                                 <input type="text" name="email">
                             </div>
                             <div class="form-group">
@@ -47,6 +47,9 @@ if (isset($_SESSION['id'])) {
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn-form" style="width:100%;"> تسجيل دخول </button>
+                            </div>
+                            <div class="form-group">
+                                <a href="sign-up.php" class="btn btn-info m-b-5 m-t-5" style="width:100%;"> انشاء حساب </a>
                             </div>
                         </form>
                     </div>

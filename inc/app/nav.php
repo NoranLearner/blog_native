@@ -38,6 +38,9 @@
                                     <li><a href="sign-up.php">انشاء حساب</a></li>
                                     <li><a href="login.php"> دخول </a></li>
                                 <?php } ?>
+                                <?php if (isset($_SESSION['id'])) { ?>
+                                    <li><a href="logout.php"> خروج </a></li>
+                                <?php } ?>
                                 <li class="nav-item dropdown"><a href="blog.html"> المدونه </a></li>
                                 <li><a href="movies.html">الأفلام</a></li>
                                 <li><a href="contact.html">اتصل بنا </a></li>
