@@ -8,6 +8,7 @@
 
     $App = 'inc/app/';
 
+    include $App . 'function.php';
     include $App . 'head.php';
     include $App . 'nav.php';
     

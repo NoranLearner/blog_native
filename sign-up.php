@@ -1,74 +1,70 @@
 <?php
 
-// include 'inc/init.php';
-
 session_start();
+
 include 'inc/db/connect.php';
+
+$title = 'انشاء حساب';
+
+// include 'inc/init.php';
+include 'inc/app/function.php';
 include 'inc/app/head.php';
 
 if (isset($_SESSION['id'])) {
-    header("location:admin_panel/");
+	header("location:admin_panel/");
 }
 
 ?>
 
-<!--start-main-->
-<!-- <div class="header-bottom">
-    <div class="container">
-        <div class="logo wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
-            <h1><a href="index-3.html"> (V1.0) Avatar Script - سكربت أفاتار</a></h1>
-            <p><label class="of"></label> ضع شعار موقعك هنا<label class="on"></label></p>
-        </div>
-    </div>
-</div> -->
-
-	<!-- banner -->
-	<!-- technology-left -->
-	<div class="technology">
-		<div class="container">
-			<div class="col-md-12 col-lg-2"></div>
-			<div class="col-md-12 col-lg-8 ">
-				<div id="content" class="contact-section text-right">
-					<h2 class="w3 text-center">انشاء حساب</h2>
-					<div class="contact-grids">
-						<div class="col-md-12 contact-grid">
-							<div id="success"></div>
-							<form id="register" method="post">
-								<div class="form-group text-right">
-									<label> اسم المستخدم </label>
-									<input type="text" class="text-right" style="direction:rtl;" name="name" required="">
-								</div>
-								<div class="form-group text-right">
-									<label> البريد الإلكترونى </label>
-									<input type="email" class="text-right" style="direction:rtl;" name="email" required="">
-								</div>
-								<div class="form-group">
-									<label> كلمة المرور </label>
-									<br>
-									<input type="password" class="text-right" style="direction:rtl;" name="pass" required="">
-								</div>
-								<div class="form-group">
-									<label> تأكيد كلمة المرور </label>
-									<br>
-									<input type="password" class="text-right" style="direction:rtl;" name="confirm" required="">
-								</div>
-								<div class="form-group">
-									<input type="submit" style="width:100%;" value="انشاء حساب">
-								</div>
-							</form>
-						</div>
-						<div class="clearfix"></div>
+<div class="technology">
+	<div class="container">
+		<div class="col-md-12 col-lg-2"></div>
+		<div class="col-md-12 col-lg-8 ">
+			<div class="contact-section text-right" style="direction:rtl;">
+				<h2 class="w3 text-center">
+					<i class="fa fa-user-plus" aria-hidden="true"></i>
+					&nbsp;
+					انشاء حساب
+				</h2>
+				<div class="contact-grids">
+					<div class="col-md-12 contact-grid">
 						<div id="success"></div>
+						<form id="register" method="post">
+							<div class="form-group">
+								<label> اسم المستخدم </label>
+								<input type="text" name="name" style="margin: 1em 0;">
+							</div>
+							<div class="form-group">
+								<label> البريد الإلكترونى </label>
+								<input type="email" name="email" style="margin: 1em 0;">
+							</div>
+							<div class="form-group">
+								<label> كلمة المرور </label>
+								<input type="password" name="pass" style="margin: 1em 0;">
+							</div>
+							<div class="form-group">
+								<label> تأكيد كلمة المرور </label>
+								<input type="password" name="confirm" style="margin: 1em 0;">
+							</div>
+							<div class="form-group">
+								<input type="submit" style="width:100%;" value="انشاء حساب">
+							</div>
+							<p>
+								ستتلقى بريدًا إلكترونيًا لتنشيط حسابك. إذا كان لديك أي مشكلة
+								<a href="contact.php">تواصل معنا</a>
+							</p>
+							<hr/>
+							<div class="form-group">
+                                <a href="login.php" class="btn btn-info" style="margin:10px auto;"> دخول </a>
+                            </div>
+						</form>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
-
-			<div class="clearfix"></div>
-			<!-- technology-right -->
 		</div>
 	</div>
-
-<!-- <?php include $App . 'footer.php'; ?> -->
+</div>
 
 <script>
 	$(document).on('submit', '#register', function (e) {
@@ -82,7 +78,7 @@ if (isset($_SESSION['id'])) {
 			processData: false,
 			success: function (data) {
 				$("#success").html(data);
-			}
+			},
 		})
 	});
 </script>

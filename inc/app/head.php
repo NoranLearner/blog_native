@@ -5,7 +5,8 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-    <title> (V1.0) Avatar Script - سكربت أفاتار </title>
+    <!-- <title> Avatar Script - سكربت أفاتار </title> -->
+    <title> سكربت أفاتار - <?php echo getTitle(); ?> </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Style Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -16,7 +17,8 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
     <link href="themes/css/style.css" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="themes/css/component.css" />
-    <script src="themes/js/jquery-1.11.1.min.js"></script>
+    <!-- <script src="themes/js/jquery-1.11.1.min.js"></script> -->
+    <script src="themes/js/jquery-3.7.1.min.js"></script>
     <script src="themes/js/bootstrap.min.js"></script>
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="themes/css/font-awesome/font-awesome.min.css">

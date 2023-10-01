@@ -2,10 +2,12 @@
 	<div class="container">
 		<div class="col-md-4 footer-left wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
 			<h4 class="text-right"> معلومات عنا </h4>
-			<p class="text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،</p>
+			<p class="text-right">
+				هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+			</p>
 			<img src="images/t4.jpg" class="img-responsive" alt="">
 			<div class="bht1 pull-right" style="direction: rtl">
-				<a href="singlepage.html"> قرأءة المزيد </a>
+				<a href="singlepage.html"> قراءة المزيد </a>
 			</div>
 		</div>
 		<div class="col-md-4 footer-middle wow fadeInDown text-right" data-wow-duration=".8s" data-wow-delay=".2s">
@@ -29,7 +31,7 @@
 			<div class="name text-right">
 				<form action="#" method="post">
 					<input class="text-right" type="text" placeholder="  الاسم" required="">
-					<input class="text-right" type="text" placeholder=" البريد الألكترونى" required="">
+					<input class="text-right" type="text" placeholder=" البريد الالكترونى" required="">
 					<input type="submit" value=" اشترك الآن ">
 				</form>
 
@@ -43,6 +45,30 @@
 	<div class="container" style="direction: rtl">
 		<p>© 2019. جميع الحقوق محفوظه | بواسطه <a href="https://www.semi-colen.com/" target="_blank">semi-colen</a></p>
 	</div>
+	<br />
+	<ul class="list-unstyled list-inline social text-center">
+		<li class="list-inline-item">
+			<a href="https://www.google.com/">
+				<i class="fa fa-google"></i>
+			</a>
+		</li>
+		<li class="list-inline-item">
+			<a href="https://www.facebook.com">
+				<!-- style="color:#fa4b2a;" -->
+				<i class="fa fa-facebook"></i>
+			</a>
+		</li>
+		<li class="list-inline-item">
+			<a href="https://twitter.com">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+		<li class="list-inline-item">
+			<a href="https://www.instagram.com">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	</ul>
 </div>
 <script>
 	window.onload = function () {

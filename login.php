@@ -1,9 +1,13 @@
 <?php
 
-// include 'inc/init.php';
-
 session_start();
+
 include 'inc/db/connect.php';
+
+$title = 'دخول';
+
+// include 'inc/init.php';
+include 'inc/app/function.php';
 include 'inc/app/head.php';
 
 if (isset($_SESSION['id'])) {
@@ -12,44 +16,37 @@ if (isset($_SESSION['id'])) {
 
 ?>
 
-<!--start-main-->
-<!-- <div class="header-bottom">
-    <div class="container">
-        <div class="logo wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
-            <h1><a href="index-3.html"> (V1.0) Avatar Script - سكربت أفاتار</a></h1>
-            <p><label class="of"></label> ضع شعار موقعك هنا<label class="on"></label></p>
-        </div>
-    </div>
-</div> -->
-
-<!-- banner -->
-<!-- technology-left -->
 <div class="technology">
     <div class="container">
         <div class="col-md-12 col-lg-2"></div>
-        <div class="col-md-12 col-lg-8 ">
-            <div class="contact-section text-right">
-                <h2 class="w3 text-center">دخول</h2>
+        <div class="col-md-12 col-lg-8">
+            <div class="contact-section text-right" style="direction:rtl;">
+                <h2 class="w3 text-center">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    &nbsp;
+                    دخول
+                </h2>
                 <div class="contact-grids">
                     <div class="col-md-12 contact-grid">
                         <div id="success"></div>
-                        <form id="login">
-                            <div class="form-group text-right">
-                                <label">البريد الإلكترونى</label>
-                                <input type="text" name="email">
+                        <form id="login" method="post">
+                            <div class="form-group">
+								<label> البريد الإلكترونى </label>
+								<input type="email" name="email" style="margin: 1em 0;">
                             </div>
                             <div class="form-group">
                                 <label> كلمة المرور </label>
-                                <input type="password" name="pass">
+                                <input type="password" name="pass" style="margin: 1em 0;">
                             </div>
                             <div class="form-group">
-                                <a href="forgot-password.php"> نسيت كلمة المرور ؟ </a>
+								<input type="submit" style="width:100%;" value="تسجيل دخول">
+							</div>
+                            <hr/>
+                            <div class="form-group">
+                                <a href="forgot-password.php" class="btn btn-info" style="margin:10px auto;"> نسيت كلمة المرور ؟ </a>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn-form" style="width:100%;"> تسجيل دخول </button>
-                            </div>
-                            <div class="form-group">
-                                <a href="sign-up.php" class="btn btn-info m-b-5 m-t-5" style="width:100%;"> انشاء حساب </a>
+                                <a href="sign-up.php" class="btn btn-info" style="margin:10px auto;"> انشاء حساب </a>
                             </div>
                         </form>
                     </div>
@@ -57,13 +54,8 @@ if (isset($_SESSION['id'])) {
                 </div>
             </div>
         </div>
-
-        <div class="clearfix"></div>
-        <!-- technology-right -->
     </div>
 </div>
-
-<!-- <?php include $App . 'footer.php'; ?> -->
 
 <script>
     $(document).on('submit', '#login', function (e) {

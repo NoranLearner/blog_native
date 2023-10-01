@@ -1,8 +1,11 @@
-<?php
+<?php 
+
 session_start();
+
+// For Connect To DB
 include '../db/connect.php';
 
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
+if ($_SERVER['REQUEST_METHOD'] == "POST"):
 
     $code  = $_POST['activate'];
 
@@ -10,28 +13,24 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $stmt->execute([ $_SESSION['email']]);
     $info = $stmt->fetch();
 
-    if($code == $info['activate_code']){
-
+    if ($code == $info['activate_code']):
+        
         $_SESSION['reset'] = $_SESSION['email'];
 
-?>
+        ?>
 
         <script> 
             window.location.href='reset-pass.php';
         </script>
+        
+        <?php
 
-<?php
+    else:
+        
+        ?> <div class="alert alert-danger text-center"> لقد ادخلت رمز تحقق غير صحيح </div> <?php
 
-    } else {
+    endif;
 
-?>
-
-        <div class="alert alert-danger text-center"> لقد ادخلت رمز تحقق غير صحيح </div>
-
-<?php
-
-    }
-
-}
+endif;
 
 ?>

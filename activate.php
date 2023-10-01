@@ -1,25 +1,32 @@
 <?php
 
-ob_start();
-
 session_start();
 
 include 'inc/db/connect.php';
+
+$title = 'تفعيل الحساب';
+
+// include 'inc/init.php';
+include 'inc/app/function.php';
 include 'inc/app/head.php';
 
 if (!isset($_SESSION['email'])) {
-    header('location:index.php');
+    header('location:login.php');
 }
 
 ?>
 
-<!-- technology-left -->
 <div class="technology">
     <div class="container">
+
         <div class="col-md-12 col-lg-2"></div>
+
         <div class="col-md-12 col-lg-8 ">
+
             <div id="content" class="contact-section text-right">
+
                 <h2 class="w3 text-center">تفعيل الحساب</h2>
+
                 <div class="contact-grids">
                     <div class="col-md-12 contact-grid">
                         <div id="success"></div>
@@ -30,9 +37,8 @@ if (!isset($_SESSION['email'])) {
                                 <b>
                                     <?php echo $_SESSION['email']; ?>
                                 </b>
-                                <hr>
-                                <input type="text" class="text-center" style="direction:rtl;" name="activate"
-                                    required="" placeholder="example: code_12345">
+                                <!-- <hr> -->
+                                <input type="text" name="activate" placeholder="example: code_12345" required style="margin: 1em 0;">
                             </div>
                             <div class="form-group">
                                 <input type="submit" style="width:100%;" value=" تفعيل ">
@@ -40,13 +46,12 @@ if (!isset($_SESSION['email'])) {
                         </form>
                     </div>
                     <div class="clearfix"></div>
-                    <div id="success"></div>
                 </div>
+
             </div>
+
         </div>
 
-        <div class="clearfix"></div>
-        <!-- technology-right -->
     </div>
 </div>
 
