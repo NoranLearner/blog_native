@@ -43,13 +43,27 @@
 </div>
 <div class="copyright wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
 	<div class="container" style="direction: rtl">
-		<p>© 2019. جميع الحقوق محفوظه | بواسطه <a href="https://www.semi-colen.com/" target="_blank">semi-colen</a></p>
+		<div class="text-center">
+			جميع الحقوق محفوظه | بواسطه  <a href="https://avatar.com/"> افاتار</a>
+			<script>
+				const date = new Date();
+				let text = " &copy; ";
+				let year = date.getFullYear();
+				let result = text.concat(" ", year);
+				document.write(result);
+			</script>
+		</div>
 	</div>
 	<br />
 	<ul class="list-unstyled list-inline social text-center">
 		<li class="list-inline-item">
-			<a href="https://www.google.com/">
-				<i class="fa fa-google"></i>
+			<a href="https://www.instagram.com">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+		<li class="list-inline-item">
+			<a href="https://twitter.com">
+				<i class="fa fa-twitter"></i>
 			</a>
 		</li>
 		<li class="list-inline-item">
@@ -59,13 +73,8 @@
 			</a>
 		</li>
 		<li class="list-inline-item">
-			<a href="https://twitter.com">
-				<i class="fa fa-twitter"></i>
-			</a>
-		</li>
-		<li class="list-inline-item">
-			<a href="https://www.instagram.com">
-				<i class="fa fa-instagram"></i>
+			<a href="https://www.google.com/">
+				<i class="fa fa-google-plus"></i>
 			</a>
 		</li>
 	</ul>

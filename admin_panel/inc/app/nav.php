@@ -34,7 +34,7 @@
 					<div class="form-inline mr-auto horizontal" id="headerMenuCollapse">
 						<div class=" d-none d-lg-block">
 							<ul class="nav">
-								<li class="nav-item with-sub">
+								<!-- <li class="nav-item with-sub">
 									<a class="nav-link mr-0" href="#">
 										<i class="fa fa-cog"></i>
 										<span> Settings</span>
@@ -48,8 +48,8 @@
 												<a href="#">Social links</a>
 											</li>
 										</ul>
-									</div><!-- sub-item -->
-								</li>
+									</div>
+								</li> -->
 								<li class="nav-item">
 								<a class="nav-link" href="../" target="_blank">
 										<i class="fa fa-eye"></i>
@@ -129,9 +129,9 @@
 							<div class="d-sm-none d-lg-inline-block"><?php echo ucfirst($user['username']) ?></div>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
-							<a href="profile.html" class="dropdown-item has-icon">
+							<!-- <a href="profile.html" class="dropdown-item has-icon">
 								<i class="ion ion-android-person"></i> Profile
-							</a>
+							</a> -->
 							<a href="profile.html" class="dropdown-item has-icon">
 								<i class="ion ion-gear-a"></i> Settings
 							</a>

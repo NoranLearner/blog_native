@@ -49,6 +49,7 @@
                                 <?php } ?>
                                 <?php if (isset($_SESSION['id'])) { ?>
                                     <li><a href="logout.php" style="font-size: 15px;"> خروج </a></li>
+                                    <li><a href="profile.php" style="font-size: 15px;"> الصفحه الشخصيه </a></li>
                                 <?php } ?>
                                 <li><a href="contact.php" style="font-size: 15px;"> راسلنا </a></li>
                                 <!-- <li><a href=""> للإعلان بالموقع </a></li> -->

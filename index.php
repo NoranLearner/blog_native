@@ -355,7 +355,7 @@ if (!isset($_SESSION['id'])) {
 							<li>
 								<a href="blog4658.html?page=2" aria-label="Previous">
 									<span aria-hidden="true">
-										<i class="fa fa-arrow-left" aria-hidden="true"></i>
+										<i class="fa fa-angle-left" aria-hidden="true"></i>
 									</span>
 								</a>
 							</li>
@@ -368,7 +368,7 @@ if (!isset($_SESSION['id'])) {
 							<li>
 								<a href="blog2679.html?page=1" aria-label="Next">
 									<span aria-hidden="true">
-										<i class="fa fa-arrow-right" aria-hidden="true"></i>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
 									</span>
 								</a>
 							</li>
